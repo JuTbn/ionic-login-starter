@@ -1,0 +1,7 @@
+{
+  "name": "trainStartingApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
