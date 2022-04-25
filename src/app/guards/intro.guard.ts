@@ -5,6 +5,10 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
+/** 
+ * Check if the user has already seen the intro and show the page if not
+ */
 export class IntroGuard implements CanLoad {
   canLoad(
     route: Route,

@@ -5,6 +5,10 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
+/** 
+ * Automatically log in a user if already authenticated before
+ */
 export class AutoLoginGuard implements CanLoad {
   canLoad(
     route: Route,

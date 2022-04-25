@@ -5,6 +5,10 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
+/** 
+ * Secure the internal pages of the app
+ */
 export class AuthGuard implements CanLoad {
   canLoad(
     route: Route,
