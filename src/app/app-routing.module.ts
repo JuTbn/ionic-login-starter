@@ -16,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'tabs',
-    loadChildren: () => import('./pages/intro/intro.module').then( m => m.IntroPageModule),
+    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule),
     canLoad: [AuthGuard] //Secure all child pages
   },
   {
@@ -24,9 +24,6 @@ const routes: Routes = [
     redirectTo: '/login',
     pathMatch: 'full'
   }
-  
-
-  //    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
 ];
 @NgModule({
   imports: [
